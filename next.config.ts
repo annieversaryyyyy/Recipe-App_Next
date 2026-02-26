@@ -5,8 +5,16 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "eda.ru"
-      }
+        hostname: "eda.rambler.ru"
+      },
+       {
+        protocol: "https",
+        hostname: "food.ru",
+      },
+        {
+        protocol: "https",
+        hostname: "food.com",
+      },
     ]
   }
 };

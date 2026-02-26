@@ -30,6 +30,16 @@ The project is built with **Next.js**, **TypeScript**, and **PostgreSQL**.
 - View all recipes  
 - Add recipes with images  
 - Store recipes in PostgreSQL  
+- 
+### Allowed Image Sources
+
+External image URLs are allowed only from specific domains defined in `next.config.js`.
+
+### Supported domains
+
+- eda.rambler.ru
+- food.ru
+- food.com
 
 ---
 
