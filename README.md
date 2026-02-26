@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Healthy Recipe — an application with healthy recipes
 
-## Getting Started
+Welcome to **Healthy Recipe** — a web application where users can find and share tasty and healthy recipes.  
+The project is built with **Next.js**, **TypeScript**, and **PostgreSQL**.
 
-First, run the development server:
+## Demo  
+ **Live:** https://healthy-recipe-one.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ <p align="center">
+<img width="604" height="409" alt="screenshot" src="https://github.com/user-attachments/assets/65327a05-d853-49da-a720-f8545b8bb21a" />
+</p>
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+###  Users
+- Register a new account  
+- Log in
+- Example user@gmail.com password: user1234
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+###  Roles
+- **Guest**
+  - Can browse recipes
 
-## Learn More
+- **Authenticated User**
+  - Create new recipes  
+  - Edit and delete their own recipes  
 
-To learn more about Next.js, take a look at the following resources:
+###  Recipes
+- View all recipes  
+- Add recipes with images  
+- Store recipes in PostgreSQL  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##  Technologies Used
 
-## Deploy on Vercel
+### Frontend / Backend
+- **Next.js**
+- **TypeScript**
+- **NextAuth**
+- **Zustand**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Database
+- **PostgreSQL**
+- **Prisma ORM**
