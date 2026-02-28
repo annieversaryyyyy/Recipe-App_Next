@@ -30,7 +30,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
 
   const getUnitLabel = (unit: string) => {
     const unitOption = UNIT_ABBREVIATIONS.find(
-      (option) => option.value === unit
+      (option) => option.value === unit,
     );
     return unitOption ? unitOption.label : unit.toLowerCase();
   };
@@ -58,12 +58,10 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
         <h2 className="text-xl font-bold">{recipe.name}</h2>
       </CardHeader>
 
-      <CardBody className="flex-1 text-black">
-        <p className="text-gray-600">
-          {recipe.description || "Без описания"}
-        </p>
-        <h3 className="mt-4 font-semibold">Ингредиенты:</h3>
-        <ul className="list-disc pl-5 overflow-y-auto max-h-24">
+      <CardBody className="flex-1 text-black flex flex-col gap-2 overflow-y-auto">
+        <p className="text-gray-600">{recipe.description || "Без описания"}</p>
+        <h3 className="mt-2 font-semibold">Ингредиенты:</h3>
+        <ul className="list-disc pl-5">
           {recipe.ingredients.map((ing) => (
             <li key={ing.id}>
               {ing.ingredient.name}: {ing.quantity}{" "}
