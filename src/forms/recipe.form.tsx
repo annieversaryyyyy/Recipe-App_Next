@@ -124,7 +124,7 @@ const RecipeForm = ({ initialRecipe }: RecipeFormProps) => {
       />
       <Input
         name="imageUrl"
-        placeholder="URL изображения (необязательно)"
+        placeholder="URL изображения с food.com/eda.rambler.ru/food.ru"
         type="url"
         value={formData.imageUrl}
         classNames={{
