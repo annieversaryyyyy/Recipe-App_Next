@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cdn.food.com",
+        hostname: "cdn.food.ru",
       },
     ],
   },
